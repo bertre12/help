@@ -63,13 +63,20 @@ datefmt - формат записи даты.
 # logger.setLevel(logging.DEBUG)  # Установка порога логирования.
 #
 # handler = logging.FileHandler('log_1.log', 'w', 'utf-8')  # Создание обработчика файлов для записи.
+# handler.setLevel(logging.WARNING)  # Установка порога логирования для обработчика (для записи).
+
 # formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s',
 #                               datefmt='%d.%m.%y %H:%M:%S')  # Шаблон для отображения в журнале.
 # handler.setFormatter(formatter)  # Связывание обработчика с шаблоном форматирования.
 #
 # logger.addHandler(handler)  # Добавление обработчиков логеру.
 #
-# logger.info('test logger')  # Использование логера.
+# # Сообщения логера для записи в файл.
+# logger.debug('test logger')
+# logger.info('test logger')
+# logger.warning('test logger')
+# logger.error('test logger')
+# logger.critical('test logger')
 
 
 """Логирование в несколько мест."""
